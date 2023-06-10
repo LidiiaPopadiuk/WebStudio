@@ -1,4 +1,16 @@
-span{ color: dodgerblue;}
+span{ color: #2196F3;}
 .href {
-     color: dodgerblue;
+     color: #2196F3;
+}
+
+li {
+     list-style-type: none;
+}
+
+.href:hover {
+     color: #e921f3;
+}
+
+button:hover {
+     color: #e921f3;
 }
