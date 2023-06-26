@@ -1,8 +1,178 @@
+:root {
+     --color-span:#2196F3;
+     --color-subtitle:#212121;
+     --color-text:#757575;
+     --color-title:#FFFFFF;
+     --color-number:#FFFFFF99;
+     --color-bg:#188CE8;
+     --color-header:#000000;
+     --color-footer:#2F303A;
+}
+
 li {
      list-style-type: none;
 }
 
-.href:hover {
+body {
+     font-family: Roboto;
+}
+.header_link:hover {
+     color:var(--color-span)
+}
+
+.header_href:hover {
+     color:var(--color-span)
+}
+
+/* .footer_link:hover {
+     color:var(--color-span)
+}
+
+.footer_tel:hover {
+     color:var(--color-span)
+} */
+
+.header_slogan {
+     font-size: 26px;
+font-family: Raleway;
+font-weight: 700;
+letter-spacing: 0.78px;
+color:var(--color-span)
+}
+
+.header_text {
+     font-size: 26px;
+font-family: Raleway;
+font-weight: 700;
+letter-spacing: 0.78px;
+color:var(--color-header)
+}
+
+.header_link {
+     font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.28px;
+color:var(--color-subtitle)
+}
+
+.header_href {
+     font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.28px;
+color:var(--color-text)
+}
+
+.title_text {
+     text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 60px;
+letter-spacing: 2.64px;
+text-transform: uppercase;
+color: antiquewhite;
+}
+
+.title_btn {
+     width: 216px;
+height: 50px;
+border-radius: 4px;
+background-color:var(--color-bg);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.96px;
+color:var(--color-title)
+}
+
+.subtitle_headline {
+     font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+color:var(--color-subtitle)
+}
+
+.subtitle_text {
+     font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.42px;
+color:var(--color-text)
+}
+
+.work_title {
+     text-align: center;
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;
+color:var(--color-subtitle)
+}
+
+.people_title {
+     text-align: center;
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;
+color:var(--color-subtitle)
+}
+
+.people_name {
+     text-align: center;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.48px;
+color:var(--color-subtitle)
+}
+
+.people_desc {
+     text-align: center;
+font-size: 16px;
+letter-spacing: 0.48px;
+color:var(--color-text)
+}
+
+.footer_slogan {
+     font-size: 26px;
+font-family: Raleway;
+font-weight: 700;
+letter-spacing: 0.78px;
+color:var(--color-span)
+}
+
+.footer_text {
+     font-size: 26px;
+font-family: Raleway;
+font-weight: 700;
+letter-spacing: 0.78px;
+color:var(--color-title)
+}
+
+.footer_link {
+     font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.42px;
+color:var(--color-title)
+}
+
+.footer_tel {
+     font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.42px;
+color:var(--color-number)
+}
+
+.footer {
+     width: 1600px;
+height: 252px;
+background-color:var(--color-footer);
+}
+
+
+
+
+
+/* .href:hover {
      color:#2196F3;
 }
 
@@ -17,9 +187,7 @@ button:hover {
      color: #2196F3
 }
 
-body {
-     font-family: Roboto;
-}
+
 
 span {
      font-family: 'Raleway';
@@ -139,4 +307,4 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: #757575;
-}
+} */
