@@ -21,6 +21,22 @@ body {
     color:var(--color-span)
 }
 
+.header_link {
+    text-decoration: none;
+}
+
+.header_href {
+    text-decoration: none;
+}
+
+.footer_link {
+    text-decoration: none;
+}
+
+.footer_tel {
+    text-decoration: none;
+}
+
 .header_href:hover {
     color:var(--color-span)
 }
@@ -78,6 +94,8 @@ color:var(--color-subtitle)
 .picture_subtitle {
     font-size: 16px;
 line-height: 30px;
+font-style: normal;
+font-weight: 400;
 letter-spacing: 0.48px;
 color:var(--color-text)
 }
