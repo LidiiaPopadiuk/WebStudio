@@ -20,6 +20,14 @@ body {
      color:var(--color-span)
 }
 
+.footer_link {
+     text-decoration: none;
+}
+
+.footer_tel {
+     text-decoration: none;
+}
+
 .header_href:hover {
      color:var(--color-span)
 }
@@ -129,6 +137,9 @@ color:var(--color-subtitle)
      text-align: center;
 font-size: 16px;
 letter-spacing: 0.48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 color:var(--color-text)
 }
 
