@@ -69,7 +69,7 @@ font-weight: 900;
 line-height: 60px;
 letter-spacing: 2.64px;
 text-transform: uppercase;
-color: antiquewhite;
+color:var(--color-title)
 }
 
 .title_btn {
@@ -163,11 +163,22 @@ color:var(--color-number)
 }
 
 .footer {
-     width: 1600px;
 height: 252px;
 background-color:var(--color-footer);
 }
 
+.title {
+     background-color:var(--color-footer) ;
+     height: 600px;
+}
+
+.header_link {
+     text-decoration: none;
+}
+
+.header_href {
+     text-decoration: none;
+}
 
 
 
