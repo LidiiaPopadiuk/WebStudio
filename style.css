@@ -7,6 +7,7 @@
      --color-bg:#188CE8;
      --color-header:#000000;
      --color-footer:#2F303A;
+     --color-people:#F5F4FA;
 }
 
 li {
@@ -39,6 +40,10 @@ body {
 .footer_tel:hover {
      color:var(--color-span)
 } */
+
+header {
+     height: 80px;
+}
 
 .header_slogan {
      font-size: 26px;
@@ -77,6 +82,7 @@ font-weight: 900;
 line-height: 60px;
 letter-spacing: 2.64px;
 text-transform: uppercase;
+margin: 0;
 color:var(--color-title)
 }
 
@@ -91,7 +97,15 @@ font-size: 16px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0.96px;
+display: block;
+margin: 0 auto;
+border: none;
+margin-top: 30px;
 color:var(--color-title)
+}
+
+.subtitle {
+     padding: 88px 0px 94px 0px;
 }
 
 .subtitle_headline {
@@ -109,12 +123,21 @@ letter-spacing: 0.42px;
 color:var(--color-text)
 }
 
+.work {
+     padding-bottom: 94px;
+}
+
 .work_title {
      text-align: center;
 font-size: 36px;
 font-weight: 700;
 letter-spacing: 1.08px;
 color:var(--color-subtitle)
+}
+
+.people {
+     padding: 94px 0px;
+     background-color: var(--color-people);
 }
 
 .people_title {
@@ -141,6 +164,18 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 color:var(--color-text)
+}
+
+.people_item {
+     border-radius: 0px 0px 4px 4px;
+     width: 270px;
+background: #FFF;
+/* material shadow v1 */
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+     padding: 60px 0px;
 }
 
 .footer_slogan {
@@ -178,9 +213,10 @@ height: 252px;
 background-color:var(--color-footer);
 }
 
-.title {
+.promo {
      background-color:var(--color-footer) ;
      height: 600px;
+     padding: 200px 0 ;
 }
 
 .header_link {
@@ -191,6 +227,10 @@ background-color:var(--color-footer);
      text-decoration: none;
 }
 
+.container {
+     width: 1170px;
+     margin: 0 auto;
+}
 
 
 
