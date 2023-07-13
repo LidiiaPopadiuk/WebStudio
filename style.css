@@ -53,7 +53,7 @@ letter-spacing: 0.78px;
 color:var(--color-span)
 }
 
-.header_text {
+.header_logo {
      font-size: 26px;
 font-family: Raleway;
 font-weight: 700;
@@ -140,6 +140,10 @@ color:var(--color-subtitle)
      background-color: var(--color-people);
 }
 
+.people_img {
+     width: 100%;
+}
+
 .people_title {
      text-align: center;
 font-size: 36px;
@@ -198,6 +202,7 @@ color:var(--color-title)
      font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.42px;
+font-style: normal;
 color:var(--color-title)
 }
 
