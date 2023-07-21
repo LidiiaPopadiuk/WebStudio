@@ -7,6 +7,8 @@
     --color-bg:#188CE8;
     --color-header:#000000;
     --color-footer:#2F303A;
+    --color-picture:#FFF;
+    --color-border:#EEE;
 }
 
 li {
@@ -36,6 +38,8 @@ body {
 .footer_tel {
     text-decoration: none;
 }
+
+
 
 .header_href:hover {
     color:var(--color-span)
@@ -80,6 +84,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 26px;
 letter-spacing: 0.48px;
+border: none;
 color:var(--color-title)
 }
 
@@ -102,6 +107,7 @@ color:var(--color-text)
 
 .footer {
     width: 1600px;
+    padding: 60px 0;
 height: 252px;
 background-color:var(--color-footer);
 }
@@ -136,6 +142,65 @@ line-height: 24px;
 letter-spacing: 0.42px;
 color:var(--color-number)
 }
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.title_list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer_address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer_text {
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+
+.picture_item {
+    background-color: var(--color-picture);
+    border: var(--color-border) 1px solid;
+    width: 370px;
+    height: 404px;
+}
+
+
+.picture {
+    padding-bottom: 94px;
+}
+
+
+
+
+
+
+
+
 
 
 /* button:hover {
