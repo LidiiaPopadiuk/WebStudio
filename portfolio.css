@@ -9,6 +9,7 @@
     --color-footer:#2F303A;
     --color-picture:#FFF;
     --color-border:#EEE;
+    --color-btn:#F5F4FA;
 }
 
 li {
@@ -85,6 +86,10 @@ color:var(--color-text)
     text-decoration: none;
 }
 
+.header_contacts-link:hover {
+    color: var(--color-span);
+}
+
 .header_list {
     display: flex;
     justify-content: space-around;
@@ -101,20 +106,27 @@ color:var(--color-text)
 .title {
     padding-top: 94px;
     padding-bottom: 50px;
+    background-color: var(--color-title);
 }
 
 
 .title_btn {
 border-radius: 4px;
-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-background-color:var(--color-span);
+background-color: var(--color-btn);
 text-align: center;
 font-size: 16px;
 font-weight: 500;
 line-height: 26px;
 letter-spacing: 0.48px;
 border: none;
-color:var(--color-title)
+padding: 6px 25px 6px 25px;
+color: var(--color-subtitle);
+cursor: pointer;
+}
+
+.title_btn:hover {
+    background-color:var(--color-span);
+    color: var(--color-title);
 }
 
 .title_list {
@@ -127,6 +139,9 @@ color:var(--color-title)
     font-size: 18px;
 font-weight: 700;
 line-height: 36px;
+margin: 0;
+margin-left: 24px;
+margin-top: 20px;
 letter-spacing: 1.08px;
 color:var(--color-subtitle)
 }
@@ -135,9 +150,16 @@ color:var(--color-subtitle)
     font-size: 16px;
 line-height: 30px;
 font-style: normal;
+margin: 0;
+margin-left: 24px;
+margin-top: 4px;
 font-weight: 400;
 letter-spacing: 0.48px;
 color:var(--color-text)
+}
+
+.picture_list {
+    margin: 0;
 }
 
 .picture_item {
@@ -152,8 +174,8 @@ color:var(--color-text)
 }
 
 .picture {
-  padding:0 215px 94px 215px;
-
+    background-color: var(--color-title);
+    padding: 50px 0 94px 0;
 }
 
 .picture_list {
@@ -161,12 +183,12 @@ color:var(--color-text)
     flex-wrap: wrap;
     align-items: center;
     row-gap: 30px;
-    column-gap: 30px;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .footer {
     padding: 60px 0 60px 0;
-height: 252px;
 background-color:var(--color-footer);
 }
 
@@ -190,6 +212,7 @@ color:var(--color-title)
     font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.42px;
+font-style: normal;
 color:var(--color-title)
 }
 
@@ -197,6 +220,7 @@ color:var(--color-title)
     font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.42px;
+font-style: normal;
 color:var(--color-number)
 }
 
