@@ -144,11 +144,11 @@ color:var(--color-title)
 
 .subtitle {
      padding: 88px 0px 94px 0px;
-     height: 286px;
+     /* height: 286px; */
 }
 
 .subtitle_item {
-     height: 98px;
+     /* height: 98px; */
      width: 270px;
 }
 
