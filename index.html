@@ -54,7 +54,14 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="promo_btn">Замовити послугу</button>
+          <button class="promo_btn" data-open-modal>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <a href="#" class="modal_link"><i class="fa-solid fa-xmark"></i></a>
+              <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
+              <button class="promo_btn" data-close-modal>Закрити</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="subtitle">
@@ -931,5 +938,6 @@
       src="https://kit.fontawesome.com/a467e6a069.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

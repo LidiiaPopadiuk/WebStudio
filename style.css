@@ -161,6 +161,7 @@ header {
 .subtitle_list {
   display: flex;
   gap: 30px;
+  padding: 0;
 }
 
 .subtitle_headline {
@@ -188,6 +189,7 @@ header {
   height: 294px;
   display: flex;
   gap: 30px;
+  padding: 0;
 }
 
 .work_descr {
@@ -232,6 +234,7 @@ header {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  padding: 0;
 }
 
 .people_img {
@@ -392,6 +395,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   gap: 30px;
+  padding: 0;
 }
 
 .client_link {
@@ -413,6 +417,7 @@ header {
   color: var(--color-subtitle);
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .client_link:hover {
@@ -421,4 +426,57 @@ header {
 
 .client_link:hover path {
   fill: #2196f3;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal_title {
+  color: var(--color-subtitle);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 0;
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal_link {
+  color: black;
+border: 1px solid rgba(0, 0, 0, 0.10);
+width: 30px;
+height: 30px;
+border-radius: 100%;
+position: absolute;
+top: 0;
+right: 0;
 }
