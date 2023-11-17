@@ -57,9 +57,45 @@
           <button class="promo_btn" data-open-modal>Замовити послугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <a href="#" class="modal_link"><i class="fa-solid fa-xmark"></i></a>
-              <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
-              <button class="promo_btn" data-close-modal>Закрити</button>
+              <a href="#" class="modal_link" data-close-modal
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <h2 class="modal_title">
+                Залиште свої дані, ми вам передзвонимо
+              </h2>
+              <div class="modal_info">
+                <label class="modal_label">
+                  Ім'я
+                  <input class="modal_input" type="name" name="name"/>
+                  <i class="fa-solid fa-user"></i>
+                </label>
+                <label class="modal_label">
+                  Телефон
+                  <input class="modal_input" type="tel" name="tel" value="+380"/>
+                  <i class="fa-solid fa-phone"></i>
+                </label>
+                <label class="modal_label">
+                  Пошта
+                  <input class="modal_input" type="email" name="email"/>
+                  <i class="fa-solid fa-envelope"></i>
+                </label>
+                <label class="modal_label">
+                  Коментар
+                  <textarea
+                    class="modal_textarea"
+                    name="message"
+                    id="message"
+                    placeholder="Введіть текст"
+                  ></textarea>
+                </label>
+               <div class="modal_check">
+                <input type="checkbox" class="modal_checkbox" name="message">
+                <label class="modal_label-two">
+                  Погоджуюся з розсилкою та приймаю <a href="#" class="modal_checkbox-link">Умови договору</a>
+                </label>
+               </div>
+                <button class="modal_btn">Відправити</button>
+              </div>
             </div>
           </div>
         </div>
