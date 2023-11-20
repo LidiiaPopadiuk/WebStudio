@@ -25,7 +25,7 @@
           <nav class="header_nav">
             <ul class="header_list">
               <li class="header_item">
-                <a class="header_link" href="#">Студія</a>
+                <a class="header_link header_link-active" href="#">Студія</a>
               </li>
               <li class="header_item">
                 <a class="header_link" href="./portfolio.html">Портфоліо</a>
@@ -66,18 +66,29 @@
               <div class="modal_info">
                 <label class="modal_label">
                   Ім'я
-                  <input class="modal_input" type="name" name="name"/>
-                  <i class="fa-solid fa-user"></i>
+                  <div class="modal_box">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="modal_input" type="name" name="name" />
+                  </div>
                 </label>
                 <label class="modal_label">
                   Телефон
-                  <input class="modal_input" type="tel" name="tel" value="+380"/>
-                  <i class="fa-solid fa-phone"></i>
+                  <div class="modal_box">
+                    <i class="fa-solid fa-phone"></i>
+                    <input
+                      class="modal_input"
+                      type="tel"
+                      name="tel"
+                  
+                    />
+                  </div>
                 </label>
                 <label class="modal_label">
                   Пошта
-                  <input class="modal_input" type="email" name="email"/>
-                  <i class="fa-solid fa-envelope"></i>
+                  <div class="modal_box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="modal_input" type="email" name="email" />
+                  </div>
                 </label>
                 <label class="modal_label">
                   Коментар
@@ -88,12 +99,17 @@
                     placeholder="Введіть текст"
                   ></textarea>
                 </label>
-               <div class="modal_check">
-                <input type="checkbox" class="modal_checkbox" name="message">
-                <label class="modal_label-two">
-                  Погоджуюся з розсилкою та приймаю <a href="#" class="modal_checkbox-link">Умови договору</a>
-                </label>
-               </div>
+                <div class="modal_check">
+                  <input
+                    type="checkbox"
+                    class="modal_checkbox"
+                    name="message"
+                  />
+                  <label class="modal_label-two">
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="modal_checkbox-link">Умови договору</a>
+                  </label>
+                </div>
                 <button class="modal_btn">Відправити</button>
               </div>
             </div>
@@ -953,21 +969,42 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <h2 class="footer_text">
-          <span class="footer_slogan">Web</span>Studio
-        </h2>
-        <address class="footer_pagination">
-          <a
-            class="footer_link"
-            href="https://www.google.com/search?q=%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2%2C+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8%2C+26&rlz=1C1GCEA_enUA1027UA1027&oq=%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2%2C+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8%2C+26&aqs=chrome..69i57j0i512j69i60l2.739j0j15&sourceid=chrome&ie=UTF-8"
-            target="blank"
-            >м. Київ, пр-т Лесі Українки, 26</a
-          >
-          <a class="footer_tel" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="footer_tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div class="footer_wrapper">
+          <div class="footer_title">
+            <h2 class="footer_text">
+              <span class="footer_slogan">Web</span>Studio
+            </h2>
+            <address class="footer_pagination">
+              <a
+                class="footer_link"
+                href="https://www.google.com/search?q=%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2%2C+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8%2C+26&rlz=1C1GCEA_enUA1027UA1027&oq=%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2%2C+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8%2C+26&aqs=chrome..69i57j0i512j69i60l2.739j0j15&sourceid=chrome&ie=UTF-8"
+                target="blank"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+              <a class="footer_tel" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="footer_tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+          </div>
+          <div class="footer_join">
+            <h2 class="footer_join-title">приєднуйтесь</h2>
+            <ul class="footer_join-list">
+              <li class="footer_join-item"><a href="#" class="footer_join-link"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="footer_join-item"><a href="#" class="footer_join-link"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="footer_join-item"><a href="#" class="footer_join-link"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="footer_join-item"><a href="#" class="footer_join-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer_follow">
+            <h2 class="footer_follow-title">Підпишіться на розсилку</h2>
+            <div class="footer_wrapp">
+              <input class="footer_wrapp-input" placeholder="E-mail" type="email" name="email">
+              <button class="footer_wrapp-btn">
+                Підписатися<i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script

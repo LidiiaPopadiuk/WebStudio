@@ -39,6 +39,12 @@ body {
     color:var(--color-span)
 }
 
+.hr {
+    margin: 0;
+    background: #ECECEC;
+    height: 1px;
+}
+
 .header_link {
     text-decoration: none;
 }
