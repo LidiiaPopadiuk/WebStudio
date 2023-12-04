@@ -26,6 +26,7 @@ body {
 
 .header_link:hover {
   color: var(--color-span);
+  transition: 1s 0.1s;
 }
 
 
@@ -38,10 +39,12 @@ body {
   border-radius: 2px;
 background: var(--color-span);
 bottom: -34px;
+transition: 1s 0.1s;
 }
 
 .header_href:hover {
   color: var(--color-span);
+  transition: 1s 0.1s;
 }
 
 /* .footer_link:hover {
@@ -311,6 +314,10 @@ header {
 .people_item-link:hover {
   color: #fff;
   background-color: #2196f3;
+  /* transition: 1.5s all 0.1s; */
+  transition-property: color, background-color;
+  transition-duration: 2s, 1s;
+  transition-timing-function: ease-in;
 }
 
 .people_item-link:hover path {
@@ -436,10 +443,13 @@ header {
 
 .client_link:hover {
   border: 1px solid #2196f3;
+  transition: 1s 0.1s;
 }
 
 .client_link:hover path {
   fill: #2196f3;
+  transition: 1s 0.1s;
+
 }
 
 .is-hidden {
@@ -492,8 +502,15 @@ width: 30px;
 height: 30px;
 border-radius: 100%;
 position: absolute;
-top: 0;
-right: 0;
+top: 8px;
+right: 8px;
+}
+
+.modal_link i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal_label{
@@ -616,6 +633,7 @@ margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
+  padding: 0;
 }
 
 .footer_join-link {
@@ -624,16 +642,21 @@ margin-bottom: 20px;
 height: 44px;
 display: block;
 border-radius: 100%;
+position: relative;
 }
 
 .footer_join-link:hover {
   background-color: #2196F3;
+  transition: 1s 0.1s;
 }
 
 .footer_join-link i {
-  width: 20px;
-height: 20px;
 color: #FFFFFF;
+position: absolute;
+left: 50%;
+top:50%;
+transform: translate(-50%, -50%);
+font-size: 20px;
 }
 
 

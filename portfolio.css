@@ -140,6 +140,7 @@ cursor: pointer;
     background-color:var(--color-span);
     color: var(--color-title);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition: 2s background-color, box-shadow 0.1s;
 }
 
 .title_list {
@@ -184,22 +185,42 @@ color:var(--color-text)
     position: relative;
 }
 
-.picture_item::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: all 0.5s ease 0s;
-    opacity: 0;
-    background: rgba(33, 150, 243, 0.90);
-    position: absolute;
+.picture_item:hover .picture_overlay{
+    opacity: 0.8;
+    top: 0;
 }
 
-.picture_item:hover::before {
-    opacity: 0.8;
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-border: 1px solid #EEE;
-background: #FFF;
+.picture_item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+transition: 1s box-shadow ease-in;
+}
+
+
+
+.picture_overlay {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.54px;
+    position: absolute;
+    bottom: -100%;
+    background: rgba(33, 150, 243, 0.90);
+    height: 294px;
+    width: 100%;
+    padding: 63px 24px;
+    margin: 0;
+    opacity: 0;
+    /* transition: 0.5s; */
+    transition: 2s all 0.1s;
+}
+
+.picture_content {
+    position: relative;
+    height: 294px;
+    overflow: hidden;
 }
 
 .picture_img {
