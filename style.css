@@ -27,6 +27,7 @@ body {
 .header_link:hover {
   color: var(--color-span);
   transition: 1s 0.1s;
+
 }
 
 
@@ -39,7 +40,25 @@ body {
   border-radius: 2px;
 background: var(--color-span);
 bottom: -34px;
-transition: 1s 0.1s;
+transition: 1s;
+transform: rotate(0deg);
+}
+
+.header_link::before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  border-radius: 2px;
+background: var(--color-span);
+bottom: -34px;
+transition: 1s;
+transform: rotateY(90deg);
+}
+
+.header_link:hover::before {
+  content: '';
+  transform: rotate(0deg)
 }
 
 .header_href:hover {
@@ -453,7 +472,9 @@ header {
 }
 
 .is-hidden {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
 }
 
 .backdrop {
@@ -463,6 +484,8 @@ header {
   height: 100%;
   top: 0;
   left: 0;
+  /* opacity: 1; */
+  transition: 0.5s;
 }
 
 .modal_title {
